@@ -1,13 +1,13 @@
 package com.example.http.dto;
+
 import lombok.Data;
 
 import java.util.List;
 
 @Data
-public class ArticleDto {
+public class ArticleComplexDto {
     private String title;
     private String content;
-    private String writer;
+    private WriterDto writer;
     private List<String> comments;
 }
-
